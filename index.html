@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WalletApp</title>
+    <title>Timer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,60 @@
 
 <body>
 
+<div class="counter-app">
 
+<div class="settings active">
+    <h1>Settings</h1>
+    <label for="event-name">Event name:</label>
+    <input type="text" id="event-name" value="Nowy Rok">
+    <table class="date">-day
+        <tr>
+            <td><label for="event-day">Day:</label></td>
+            <td><label for="event-month">Month:</label></td>
+            <td><label for="event-year">Year:</label></td>
+        </tr>
+
+        <tr>
+            <td><input type="number" id="event-day" maxlength="2" value="1"></td>
+            <td><input type="number" id="event-month" maxlength="2" value="1"></td>
+            <td><input type="number" id="event-year" maxlength="4" value="2022"></td>
+        </tr>
+    </table>
+    <label for="event-image">Link to image:</label>
+    <input type="text" id="event-image" value="default.jpg">
+    <button class="save">save</button>
+</div>
+
+<div class="app-body">
+    <div class="image-section">
+        <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+    </div>
+
+    <div class="time-section">
+        <h3><span class="event">New year</span> in:</h3>
+        <div class="time-cards">
+            <div class="cards">
+                <p class="days-count number">1</p>
+                <p class="cards-title">Days</p>
+            </div>
+            <div class="cards">
+                <p class="hours-count number">1</p>
+                <p class="cards-title">Hours</p>
+            </div>
+            <div class="cards">
+                <p class="minutes-count number">1</p>
+                <p class="cards-title">Minutes</p>
+            </div>
+            <div class="cards">
+                <p class="seconds-count number">1</p>
+                <p class="cards-title">Seconds</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
 
     <script src="script.js"></script>
 </body>

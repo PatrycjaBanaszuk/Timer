@@ -6,8 +6,10 @@
 
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	min-height: 100vh;
 	font-family: 'Montserrat', sans-serif;
-	color: var(--second-color);
-	background-color: var(--first-color);
+	background-color: rgb(233, 233, 233);
 }
