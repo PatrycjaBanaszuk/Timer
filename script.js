@@ -51,4 +51,4 @@ saveBtn.addEventListener('click', appUpdate)
 
 appUpdate()
 
-setInterval(serTime, 1000)
+setInterval(setTime, 1000)
